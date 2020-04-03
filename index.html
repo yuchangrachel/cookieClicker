@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link href='https://fonts.googleapis.com/css?family=Princess Sofia' rel='stylesheet'>
+		<link rel="stylesheet" href="game.css">
+		<title>Incremental game</title>
+		<style>
+h1{
+	font-family: 'Princess Sofia';
+}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<img src="https://img.etsystatic.com/il/60bdd7/1023701474/il_570xN.1023701474_rk53.jpg?version=0" alt="logo" />
+			<h1>Cookie Clicker</h1>
+		</div>
+
+		<div class="stories">
+			<game-story-book></game-story-book>
+		</div>
+
+		<game-button></game-button>
+
+		<game-counter></game-counter>
+
+		<div class="generators">
+			<game-generator data-id="0"></game-generator>
+			<game-generator data-id="1"></game-generator>
+			<game-generator data-id="2"></game-generator>
+		</div>
+
+		<!-- import webcomponent polyfill for other browsers -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.1.0/webcomponents-lite.js"></script>
+		<script src ='dest/app.bundle.js'></script>
+	</body>
+
+	<p class="footer">Copyright© 2018 RachelHo. All Rights Reserved</p>
+</html>
